@@ -1,18 +1,17 @@
 import { useEffect, useState } from "react";
-import type { Book } from "../../../../types/type";
-import ImageViewer from "../../../ImageViewer";
-import Image from "../../../Image";
 import toast from "react-hot-toast";
 import { GrNext, GrPrevious } from "react-icons/gr";
 import { HiOutlineMinusSmall } from "react-icons/hi2";
 import { HiOutlinePlusSmall } from "react-icons/hi2";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { useAddItemToCart } from "../../../../hooks/client/useAddItemToCart";
+import { useNavigate } from "react-router-dom";
 import useGetCurrentUser from "../../../../hooks/useGetCurrentUser";
 import useGetCart from "../../../../hooks/client/useGetCart";
-import { useNavigate } from "react-router-dom";
-
+import { useAddItemToCart } from "../../../../hooks/client/useAddItemToCart";
+import type { Book } from "../../../../types/type";
+import ImageViewer from "../../../ImageViewer";
+import Image from "../../../Image";
 type Props = {
   book: Book;
 };
@@ -127,7 +126,7 @@ function BookDetail({ book }: Props) {
                 <Swiper
                   slidesPerView="auto"
                   spaceBetween={10}
-                  className="lg:max-h-[600px] w-full flex justify-center [&&_.swiper-wrapper]:flex [&&_.swiper-wrapper]:justify-center"
+                  className="lg:max-h-[600px] w-full"
                   direction={isLargeScreen ? "vertical" : "horizontal"}
                 >
                   {book?.images.map((image, index) => (

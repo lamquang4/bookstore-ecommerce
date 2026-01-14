@@ -1,10 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
-
 import BookDetail from "./BookDetail";
-
 import toast from "react-hot-toast";
 import { useEffect } from "react";
-
 import BookSlider from "../BookSlider";
 import useGetBookDetail from "../../../../hooks/client/useGetBookDetail";
 import useGetActiveBooks from "../../../../hooks/client/useGetActiveBooks";
