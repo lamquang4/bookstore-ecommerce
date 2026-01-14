@@ -1,12 +1,11 @@
-import Image from "../../Image";
-import Loading from "../../Loading";
-import type { Book } from "../../../types/type";
 import { useLocation, useNavigate } from "react-router-dom";
-import AdvancedSearch from "../AdvancedSearch";
 import { VscSettings } from "react-icons/vsc";
 import { useCallback, useState } from "react";
+import type { Book } from "../../../types/type";
+import AdvancedSearch from "../AdvancedSearch";
+import Loading from "../../Loading";
 import BookCard from "./BookCard";
-
+import Image from "../../Image";
 interface Props {
   category?: string;
   books: Book[];
@@ -106,9 +105,7 @@ function BookList({ category, books, isLoading, total }: Props) {
           }`}
         >
           {books.map((book) => {
-            return (
-           <BookCard book={book} key={book.id} />
-            );
+            return <BookCard book={book} key={book.id} />;
           })}
         </div>
       ) : (

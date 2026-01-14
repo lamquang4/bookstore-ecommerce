@@ -1,11 +1,11 @@
 import { useNavigate, useParams } from "react-router-dom";
-import useGetBookDetail from "../../../../hooks/client/useGetBookDetail";
+import useGetBookDetail from "../../../hooks/client/useGetBookDetail";
 import BookDetail from "./BookDetail";
-import BreadCrumb from "../../BreadCrumb";
+import BreadCrumb from "../BreadCrumb";
 import toast from "react-hot-toast";
 import { useEffect } from "react";
-import Loading from "../../../Loading";
-import useGetActiveBooks from "../../../../hooks/client/useGetActiveBooks";
+import Loading from "../../Loading";
+import useGetActiveBooks from "../../../hooks/client/useGetActiveBooks";
 import BookSlider from "../BookSlider";
 
 function BookDetailSlug() {
