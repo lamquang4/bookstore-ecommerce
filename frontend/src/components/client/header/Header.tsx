@@ -124,7 +124,10 @@ function Header() {
             </div>
 
             {/* Mobile Search */}
-            <SearchMobile onToggleSearch={toggleSearch} openSearch={openSearch} />
+            <SearchMobile
+              onToggleSearch={toggleSearch}
+              openSearch={openSearch}
+            />
 
             {/* Mobile */}
             <div className="flex lg:hidden items-center gap-4 relative">

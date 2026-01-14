@@ -1,4 +1,4 @@
-import EditAuthor from "../../components/admin/Author/EditAuthor";
+import EditAuthor from "../../components/admin/author/EditAuthor";
 import LayoutPage from "../../components/admin/LayoutPage";
 
 function EditAuthorPage() {

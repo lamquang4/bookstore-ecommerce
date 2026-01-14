@@ -1,5 +1,5 @@
+import AddAdmin from "../../components/admin/admin/AddAdmin";
 import LayoutPage from "../../components/admin/LayoutPage";
-import AddAdmin from "../../components/admin/Admin/AddAdmin";
 
 function AddAdminPage() {
   return (

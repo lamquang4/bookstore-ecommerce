@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/admin/LayoutPage";
-import Book from "../../components/admin/Book/Book";
+import Book from "../../components/admin/book/Book";
 
 function BookPage() {
   return (

@@ -1,7 +1,7 @@
 import InputImage from "../InputImage";
 import { useCallback, useState } from "react";
 import toast from "react-hot-toast";
-import TextBoxEditor from "../TextBoxEditor/TextBoxEditor";
+import TextBoxEditor from "../textboxeditor/TextBoxEditor";
 import { Link } from "react-router-dom";
 import { useInputImage } from "../../../hooks/admin/useInputImage";
 import useAddBook from "../../../hooks/admin/useAddBook";

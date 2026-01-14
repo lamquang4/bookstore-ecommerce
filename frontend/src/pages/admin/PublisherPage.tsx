@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/admin/LayoutPage";
-import Publisher from "../../components/admin/Publisher/Publisher";
+import Publisher from "../../components/admin/publisher/Publisher";
 
 function PublisherPage() {
   return (

@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/client/LayoutPage";
-import BookSale from "../../components/client/Book/BookSale";
+import BookSale from "../../components/client/book/BookSale";
 
 function BookSalePage() {
   return (

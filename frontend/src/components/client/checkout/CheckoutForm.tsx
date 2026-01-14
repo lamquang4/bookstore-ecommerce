@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import Image from "../../Image";
 import Loading from "../../Loading";
-import Overplay from "./../Overplay";
+import Overplay from "../Overplay";
 import ProductBuyList from "./ProductBuyList";
 import ShippingInfoForm from "./ShippingInfoForm";
 import PaymentMethod from "./PaymentMethod";

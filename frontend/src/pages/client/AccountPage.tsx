@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/client/LayoutPage";
-import Account from "../../components/client/Account/Account";
+import Account from "../../components/client/account/Account";
 
 function AccountPage() {
   return (

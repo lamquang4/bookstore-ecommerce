@@ -1,6 +1,5 @@
 import LayoutPage from "../../components/client/LayoutPage";
-
-import BookDetailSlug from "../../components/client/Book/BookDetail/BookDetailSlug";
+import BookDetailSlug from "../../components/client/book/bookdetail/BookDetailSlug";
 
 function BookDetailPage() {
   return (

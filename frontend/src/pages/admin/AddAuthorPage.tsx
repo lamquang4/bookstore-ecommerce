@@ -1,4 +1,4 @@
-import AddAuthor from "../../components/admin/Author/AddAuthor";
+import AddAuthor from "../../components/admin/author/AddAuthor";
 import LayoutPage from "../../components/admin/LayoutPage";
 
 function AddAuthorPage() {

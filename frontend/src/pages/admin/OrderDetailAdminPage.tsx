@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/admin/LayoutPage";
-import OrderDetail from "../../components/admin/Order/OrderDetail";
+import OrderDetail from "../../components/admin/order/OrderDetail";
 
 function OrderDetailAdminPage() {
   return (

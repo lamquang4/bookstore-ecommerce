@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/client/LayoutPage";
-import BookCategory from "../../components/client/Book/BookCategory";
+import BookCategory from "../../components/client/book/BookCategory";
 
 function BookCategoryPage() {
   return (

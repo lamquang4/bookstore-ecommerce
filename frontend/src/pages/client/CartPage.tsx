@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/client/LayoutPage";
-import Cart from "../../components/client/Cart/Cart";
+import Cart from "../../components/client/cart/Cart";
 
 function CartPage() {
   return (
