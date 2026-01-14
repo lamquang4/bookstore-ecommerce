@@ -3,7 +3,7 @@ import CartItem from "./CartItem";
 import useGetCart from "../../../hooks/client/useGetCart";
 import useGetCurrentUser from "../../../hooks/useGetCurrentUser";
 import useGetActiveBooks from "../../../hooks/client/useGetActiveBooks";
-import BookSlider from "../Book/BookSlider";
+import BookSlider from "../book/BookSlider";
 
 function Cart() {
   const { user, isLoading: isLoadingCurrentUser } = useGetCurrentUser("client");

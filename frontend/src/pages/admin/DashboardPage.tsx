@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/admin/LayoutPage";
-import Dashboard from "../../components/admin/Dashboard/Dashboard";
+import Dashboard from "../../components/admin/dashboard/Dashboard";
 
 function DashboardPage() {
   return (

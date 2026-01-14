@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/admin/LayoutPage";
-import EditCategory from "../../components/admin/Category/EditCategory";
+import EditCategory from "../../components/admin/category/EditCategory";
 
 function EditCategoryPage() {
   return (

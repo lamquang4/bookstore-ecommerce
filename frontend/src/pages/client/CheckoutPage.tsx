@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/client/LayoutPage";
-import CheckoutForm from "../../components/client/Checkout/CheckoutForm";
+import CheckoutForm from "../../components/client/checkout/CheckoutForm";
 
 function CheckoutPage() {
   return (

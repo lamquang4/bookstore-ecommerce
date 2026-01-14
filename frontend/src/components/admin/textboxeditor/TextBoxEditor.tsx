@@ -14,7 +14,7 @@ import {
   TableHeader,
 } from "@tiptap/extension-table";
 import Link from "@tiptap/extension-link";
-import ToolBar from "./ToolBar/ToolBar";
+import ToolBar from "./toolbar/ToolBar";
 import BubbleMenuBar from "./BubbleMenuBar";
 
 type Props = {

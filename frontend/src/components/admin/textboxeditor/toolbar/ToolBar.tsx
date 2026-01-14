@@ -1,9 +1,9 @@
 import { memo } from "react";
 import { Editor } from "@tiptap/react";
-import ButtonTool from "./ButtonTool";
 import BlockStyleTool from "./BlockStyleTool";
-import LinkTool from "./LinkTool";
+import ButtonTool from "./ButtonTool";
 import TableTool from "./TableTool";
+import LinkTool from "./LinkTool";
 
 function ToolBar({ editor }: { editor: Editor | null }) {
   return (

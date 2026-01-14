@@ -1,5 +1,5 @@
 import LayoutPage from "../../components/admin/LayoutPage";
-import EditPublisher from "../../components/admin/Publisher/EditPublisher";
+import EditPublisher from "../../components/admin/publisher/EditPublisher";
 
 function EditPublisherPage() {
   return (

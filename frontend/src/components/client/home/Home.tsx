@@ -1,6 +1,6 @@
 import useGetActiveBooks from "../../../hooks/client/useGetActiveBooks";
 import useGetBestsellerBooks from "../../../hooks/client/useGetBestsellerBooks";
-import BookSlider from "../Book/BookSlider";
+import BookSlider from "../book/BookSlider";
 import FeatureBanner from "./FeatureBanner";
 import MainBanner from "./MainBanner";
 import PromotionBanner from "./PromotionBanner";

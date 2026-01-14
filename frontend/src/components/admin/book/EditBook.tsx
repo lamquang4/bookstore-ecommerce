@@ -7,7 +7,7 @@ import Image from "../../Image";
 import ImageViewer from "../../ImageViewer";
 import { HiMiniXMark } from "react-icons/hi2";
 import toast from "react-hot-toast";
-import TextBoxEditor from "../TextBoxEditor/TextBoxEditor";
+import TextBoxEditor from "../textboxeditor/TextBoxEditor";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { VscTrash } from "react-icons/vsc";
 import InputImage1 from "../InputImage1";

@@ -1,5 +1,5 @@
+import AddCategory from "../../components/admin/category/AddCategory";
 import LayoutPage from "../../components/admin/LayoutPage";
-import AddCategory from "../../components/admin/Category/AddCategory";
 
 function AddCategoryPage() {
   return (
