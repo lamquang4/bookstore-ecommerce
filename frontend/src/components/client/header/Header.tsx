@@ -20,7 +20,6 @@ function Header() {
 
   const [openSearch, setOpenSearch] = useState<boolean>(false);
   const [menuMobileOpen, setMenuMobileOpen] = useState<boolean>(false);
-  const [profileMenuOpen, setProfileMenuOpen] = useState<boolean>(false);
 
   const totalQuantity = useMemo(() => {
     return (
@@ -33,18 +32,10 @@ function Header() {
   const toggleSearch = useCallback(() => {
     setOpenSearch((prev) => !prev);
     setMenuMobileOpen(false);
-    setProfileMenuOpen(false);
   }, []);
 
   const toggleMobileMenu = useCallback(() => {
     setMenuMobileOpen((prev) => !prev);
-    setOpenSearch(false);
-    setProfileMenuOpen(false);
-  }, []);
-
-  const toggleProfileMenu = useCallback(() => {
-    setProfileMenuOpen((prev) => !prev);
-    setMenuMobileOpen(false);
     setOpenSearch(false);
   }, []);
 
@@ -100,13 +91,9 @@ function Header() {
             <div className="hidden lg:flex items-center gap-5">
               <SearchDesktop />
 
-              <div
-                className="relative cursor-pointer group"
-                onMouseEnter={toggleProfileMenu}
-                onMouseLeave={toggleProfileMenu}
-              >
+              <div className="relative cursor-pointer group">
                 <CiUser size={24} />
-                <ProfileMenu isOpen={profileMenuOpen} />
+                <ProfileMenu />
               </div>
 
               <Link to={"/cart"} className="relative" data-testid="cart">
@@ -135,13 +122,9 @@ function Header() {
                 <CiSearch size={24} />
               </button>
 
-              <div
-                className="relative cursor-pointer group"
-                onMouseOver={toggleProfileMenu}
-                onMouseOut={toggleProfileMenu}
-              >
+              <div className="relative cursor-pointer group">
                 <CiUser size={24} />
-                <ProfileMenu isOpen={profileMenuOpen} />
+                <ProfileMenu />
               </div>
 
               <Link to={"/cart"} className="relative" data-testid="cart">
