@@ -1,4 +1,4 @@
-import LayoutPage from "../../components/admin/LayoutPage";
+import LayoutPage from "../../components/admin/layout/LayoutPage";
 import EditAdmin from "../../components/admin/admin/EditAdmin";
 
 function EditAdminPage() {

@@ -1,5 +1,5 @@
 import Account from "../../components/admin/Account";
-import LayoutPage from "../../components/admin/LayoutPage";
+import LayoutPage from "../../components/admin/layout/LayoutPage";
 
 function AccountAdminPage() {
   return (

@@ -1,4 +1,4 @@
-import LayoutPage from "../../components/admin/LayoutPage";
+import LayoutPage from "../../components/admin/layout/LayoutPage";
 import Dashboard from "../../components/admin/dashboard/Dashboard";
 
 function DashboardPage() {

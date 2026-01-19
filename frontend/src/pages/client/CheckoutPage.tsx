@@ -1,4 +1,4 @@
-import LayoutPage from "../../components/client/LayoutPage";
+import LayoutPage from "../../components/client/layout/LayoutPage";
 import CheckoutForm from "../../components/client/checkout/CheckoutForm";
 
 function CheckoutPage() {

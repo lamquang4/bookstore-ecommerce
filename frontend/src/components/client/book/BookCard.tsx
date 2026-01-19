@@ -41,7 +41,7 @@ function BookCard({ book }: Props) {
       </div>
 
       <div className="space-y-[6px]">
-        <h5 className="font-medium capitalize">{book.title}</h5>
+        <h5 className="font-medium capitalize line-clamp-2">{book.title}</h5>
 
         {book.discount > 0 ? (
           <div className="flex gap-[12px]">

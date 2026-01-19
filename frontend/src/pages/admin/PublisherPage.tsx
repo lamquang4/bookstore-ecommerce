@@ -1,4 +1,4 @@
-import LayoutPage from "../../components/admin/LayoutPage";
+import LayoutPage from "../../components/admin/layout/LayoutPage";
 import Publisher from "../../components/admin/publisher/Publisher";
 
 function PublisherPage() {

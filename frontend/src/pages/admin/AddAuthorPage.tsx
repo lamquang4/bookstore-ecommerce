@@ -1,5 +1,5 @@
 import AddAuthor from "../../components/admin/author/AddAuthor";
-import LayoutPage from "../../components/admin/LayoutPage";
+import LayoutPage from "../../components/admin/layout/LayoutPage";
 
 function AddAuthorPage() {
   return (

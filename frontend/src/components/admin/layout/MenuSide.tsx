@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Overplay from "./Overplay";
-import Image from "../Image";
+import Overplay from "../Overplay";
+import Image from "../../Image";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoIosArrowUp } from "react-icons/io";
 import { TbCategoryPlus } from "react-icons/tb";
@@ -158,7 +158,7 @@ function MenuSide({ menuOpen, onToggleMenu }: Props) {
                         <button>
                           {openMenus[item.key] ||
                           item.children.some(
-                            (child) => pathname === child.path
+                            (child) => pathname === child.path,
                           ) ? (
                             <IoIosArrowDown size={18} />
                           ) : (

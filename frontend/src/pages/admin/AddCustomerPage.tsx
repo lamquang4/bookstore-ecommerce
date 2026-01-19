@@ -1,9 +1,10 @@
-import LayoutPage from "../../components/admin/LayoutPage";
+import LayoutPage from "../../components/admin/layout/LayoutPage";
 import AddCustomer from "../../components/admin/customer/AddCustomer";
 
 function AddCustomerPage() {
   return (
-    <LayoutPage>c
+    <LayoutPage>
+      c
       <AddCustomer />
     </LayoutPage>
   );
