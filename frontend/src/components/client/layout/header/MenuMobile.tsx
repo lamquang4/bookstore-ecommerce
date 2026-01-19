@@ -98,7 +98,7 @@ function MenuMobile({ isOpen, onToggleMenu }: MenuMobileProps) {
             </ul>
           </li>
 
-          <li className="border-b border-gray-300 cursor-pointer">
+          <li className="border-b border-gray-300 cursor-pointer text-black font-semibold">
             <Link to={"/sale"} className="py-[15px]">
               Giảm giá
             </Link>
