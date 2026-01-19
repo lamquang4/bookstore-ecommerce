@@ -1,6 +1,6 @@
 import { memo, useEffect, useState } from "react";
 import { matchPath, useLocation, useNavigate } from "react-router-dom";
-import Suggestion from "../Suggestion";
+import Suggestion from "../../Suggestion";
 
 type Props = {
   onToggleSearch: () => void;

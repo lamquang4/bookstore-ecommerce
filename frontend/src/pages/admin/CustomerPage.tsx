@@ -1,4 +1,4 @@
-import LayoutPage from "../../components/admin/LayoutPage";
+import LayoutPage from "../../components/admin/layout/LayoutPage";
 import Customer from "../../components/admin/customer/Customer";
 
 function CustomerPage() {

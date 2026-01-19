@@ -1,4 +1,3 @@
-import { useCallback, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { TbMaximize } from "react-icons/tb";
 import ProfileMenu from "./ProfileMenu";
@@ -8,12 +7,6 @@ type Props = {
 };
 
 function Header({ onToggleMenu }: Props) {
-  const [profileMenuOpen, setProfileMenuOpen] = useState<boolean>(false);
-
-  const toggleProfileMenu = useCallback(() => {
-    setProfileMenuOpen((prev) => !prev);
-  }, []);
-
   const handleFullscreen = () => {
     if (!document.fullscreenElement) {
       document.documentElement.requestFullscreen();
@@ -42,10 +35,7 @@ function Header({ onToggleMenu }: Props) {
               <TbMaximize size={18} />
             </button>
 
-            <ProfileMenu
-              onToggleMenu={toggleProfileMenu}
-              menuOpen={profileMenuOpen}
-            />
+            <ProfileMenu />
           </div>
         </div>
       </header>

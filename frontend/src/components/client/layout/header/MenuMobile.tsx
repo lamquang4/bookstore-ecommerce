@@ -1,9 +1,9 @@
 import { memo, useEffect, useState } from "react";
-import Overplay from "../Overplay";
+import Overplay from "../../Overplay";
 import { FaPlus } from "react-icons/fa6";
 import { FaMinus } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import useGetCategories from "../../../hooks/client/useGetCategories";
+import useGetCategories from "../../../../hooks/client/useGetCategories";
 type MenuMobileProps = {
   isOpen: boolean;
   onToggleMenu: () => void;
@@ -34,7 +34,7 @@ function MenuMobile({ isOpen, onToggleMenu }: MenuMobileProps) {
   return (
     <>
       <nav
-        className={`custom-scroll fixed top-0 w-full max-w-[320px] h-screen py-[20px] px-[15px] overflow-y-auto bg-white shadow-md transition-all duration-500 ease-in-out z-[22] ${
+        className={`text-[0.9rem] custom-scroll fixed top-0 w-full max-w-[320px] h-screen py-[20px] px-[15px] overflow-y-auto bg-white shadow-md transition-all duration-500 ease-in-out z-[22] ${
           isOpen ? "right-0 visible" : "right-[-100%] invisible"
         }`}
       >
@@ -56,18 +56,18 @@ function MenuMobile({ isOpen, onToggleMenu }: MenuMobileProps) {
           </button>
         </div>
 
-        <ul className="py-[20px] font-semibold text-[0.9rem] uppercase">
+        <ul className="py-[20px]">
           <li
             className="border-b border-gray-300 cursor-pointer"
             onClick={() => toggleOpen(`a3`)}
           >
-            <div className="w-full flex justify-between items-center py-[15px]">
+            <div className="w-full flex justify-between items-center py-[15px] text-black font-semibold">
               <p>Danh mục</p>
               <button>
                 {openMenus[`a3`] ? (
-                  <FaMinus className="text-[#3b3a3a]" size={15} />
+                  <FaMinus size={15} />
                 ) : (
-                  <FaPlus className="text-[#3b3a3a]" size={15} />
+                  <FaPlus size={15} />
                 )}
               </button>
             </div>
@@ -80,7 +80,7 @@ function MenuMobile({ isOpen, onToggleMenu }: MenuMobileProps) {
               <li>
                 <Link
                   to={`/books/all`}
-                  className="py-[15px] text-[0.9rem] text-[#444] font-medium hover:text-black"
+                  className="py-[15px] font-medium hover:text-black"
                 >
                   Tất cả
                 </Link>
@@ -89,7 +89,7 @@ function MenuMobile({ isOpen, onToggleMenu }: MenuMobileProps) {
                 <li key={category.id}>
                   <Link
                     to={`/books/${category.slug}`}
-                    className="py-[15px] text-[0.9rem] text-[#444] font-medium hover:text-black"
+                    className="py-[15px] font-medium hover:text-black"
                   >
                     {category.name}
                   </Link>

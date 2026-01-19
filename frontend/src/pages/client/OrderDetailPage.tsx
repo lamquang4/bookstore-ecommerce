@@ -1,4 +1,4 @@
-import LayoutPage from "../../components/client/LayoutPage";
+import LayoutPage from "../../components/client/layout/LayoutPage";
 import OrderDetail from "../../components/client/order/orderdetail/OrderDetail";
 
 function OrderDetailPage() {

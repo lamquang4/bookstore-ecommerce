@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Image from "../../Image";
+import Image from "../../../Image";
 import MenuDropDown from "./MenuDropDown";
 import SearchDesktop from "./SearchDesktop";
 import ProfileMenu from "./ProfileMenu";
@@ -8,11 +8,11 @@ import { CiUser, CiSearch } from "react-icons/ci";
 import { AiOutlineMenu } from "react-icons/ai";
 import SearchMobile from "./SearchMobile";
 import MenuMobile from "./MenuMobile";
-import Overplay from "../Overplay";
+import Overplay from "../../Overplay";
 import { useCallback, useEffect, useMemo, useState } from "react";
-import useGetCategories from "../../../hooks/client/useGetCategories";
-import useGetCurrentUser from "../../../hooks/useGetCurrentUser";
-import useGetCart from "../../../hooks/client/useGetCart";
+import useGetCategories from "../../../../hooks/client/useGetCategories";
+import useGetCurrentUser from "../../../../hooks/useGetCurrentUser";
+import useGetCart from "../../../../hooks/client/useGetCart";
 function Header() {
   const { user } = useGetCurrentUser("client");
   const { cart } = useGetCart(user?.id || "");

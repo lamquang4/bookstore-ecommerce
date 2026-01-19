@@ -1,7 +1,7 @@
 import { memo, useState } from "react";
 import { CiSearch } from "react-icons/ci";
 import { useNavigate, useLocation, matchPath } from "react-router-dom";
-import Suggestion from "../Suggestion";
+import Suggestion from "../../Suggestion";
 
 function SearchDesktop() {
   const navigate = useNavigate();

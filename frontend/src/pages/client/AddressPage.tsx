@@ -1,4 +1,4 @@
-import LayoutPage from "../../components/client/LayoutPage";
+import LayoutPage from "../../components/client/layout/LayoutPage";
 import Address from "../../components/client/address/Address";
 
 function AddressPage() {
