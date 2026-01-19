@@ -1,6 +1,6 @@
 import { type ReactNode, useEffect, useState } from "react";
 import MenuSide from "./MenuSide";
-import Header from "./Header";
+import Header from "./header/Header";
 
 type LayoutProps = {
   children: ReactNode;
