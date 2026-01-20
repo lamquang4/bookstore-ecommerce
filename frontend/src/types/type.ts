@@ -124,6 +124,7 @@ export interface ProductInCart {
   price: number;
   discount: number;
   slug: string;
+  name:string;
   quantity: number;
   stock: number;
 }
