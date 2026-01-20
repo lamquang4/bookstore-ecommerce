@@ -121,10 +121,10 @@ export interface ProductInCart {
   bookId: string;
   title: string;
   images: string[];
-  name: string;
   price: number;
   discount: number;
   slug: string;
+  name:string;
   quantity: number;
   stock: number;
 }

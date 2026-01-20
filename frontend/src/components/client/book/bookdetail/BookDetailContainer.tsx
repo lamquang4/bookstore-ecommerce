@@ -8,7 +8,7 @@ import useGetActiveBooks from "../../../../hooks/client/useGetActiveBooks";
 import Loading from "../../../Loading";
 import BreadCrumb from "../../BreadCrumb";
 
-function BookDetailSlug() {
+function BookDetailContainer() {
   const { slug } = useParams();
   const navigate = useNavigate();
   const { book, isLoading } = useGetBookDetail(slug as string);
@@ -53,4 +53,4 @@ function BookDetailSlug() {
   );
 }
 
-export default BookDetailSlug;
+export default BookDetailContainer;

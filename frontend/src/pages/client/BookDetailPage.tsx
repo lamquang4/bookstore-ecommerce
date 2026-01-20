@@ -1,10 +1,10 @@
 import LayoutPage from "../../components/client/layout/LayoutPage";
-import BookDetailSlug from "../../components/client/book/bookdetail/BookDetailSlug";
+import BookDetailContainer from "../../components/client/book/bookdetail/BookDetailContainer";
 
 function BookDetailPage() {
   return (
     <LayoutPage>
-      <BookDetailSlug />
+      <BookDetailContainer />
     </LayoutPage>
   );
 }
