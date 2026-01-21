@@ -101,7 +101,7 @@ function BookGallery({ images }: Props) {
         onClick={(e) => {
           e.stopPropagation();
           e.preventDefault();
-          handleOpenViewer(`${mainImage}`);
+          handleOpenViewer(`${import.meta.env.VITE_BACKEND_URL}${mainImage}`);
         }}
       >
         {mainImage && (
@@ -116,7 +116,7 @@ function BookGallery({ images }: Props) {
 
             <div className="w-full h-[400px] sm:h-[500px] md:h-[600px] overflow-hidden">
               <Image
-                source={`${mainImage}`}
+                source={`${import.meta.env.VITE_BACKEND_URL}${mainImage}`}
                 alt=""
                 className="w-full h-full object-contain "
                 loading="eager"
