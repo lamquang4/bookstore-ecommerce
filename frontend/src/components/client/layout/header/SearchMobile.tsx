@@ -4,10 +4,10 @@ import Suggestion from "../../Suggestion";
 
 type Props = {
   onToggleSearch: () => void;
-  openSearch: boolean;
+  searchOpen: boolean;
 };
 
-function SearchMobile({ onToggleSearch, openSearch }: Props) {
+function SearchMobile({ onToggleSearch, searchOpen }: Props) {
   const navigate = useNavigate();
   const location = useLocation();
   const [search, setSearch] = useState<string>("");
@@ -39,7 +39,7 @@ function SearchMobile({ onToggleSearch, openSearch }: Props) {
   };
 
   useEffect(() => {
-    if (openSearch) {
+    if (searchOpen) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -48,12 +48,12 @@ function SearchMobile({ onToggleSearch, openSearch }: Props) {
     return () => {
       document.body.style.overflow = "";
     };
-  }, [openSearch]);
+  }, [searchOpen]);
 
   return (
     <div
       className={`absolute left-0 w-full bg-white border-t border-gray-300 transition-all duration-300 overflow-hidden ${
-        openSearch
+        searchOpen
           ? "opacity-100 visible top-full"
           : "opacity-0 invisible top-[90px]"
       }`}
