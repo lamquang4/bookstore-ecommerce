@@ -1,5 +1,7 @@
 # WEBSITE FULLSTACK FAHASA
 
+![](docs/images/ui1.png)
+
 ## Cài đặt môi trường
 
 **1. Clone repository**
