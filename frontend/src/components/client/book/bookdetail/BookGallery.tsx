@@ -85,7 +85,7 @@ function BookGallery({ images }: Props) {
                 }`}
               >
                 <Image
-                  source={`${image.image}`}
+                  source={`${import.meta.env.VITE_BACKEND_URL}${image.image}`}
                   alt=""
                   className="w-full h-full object-contain"
                   loading="eager"
